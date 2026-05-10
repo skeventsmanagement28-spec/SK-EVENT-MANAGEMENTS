@@ -1,0 +1,175 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PageShell } from "@/components/PageShell";
+import { SectionTitle } from "@/components/SectionTitle";
+import { Reveal } from "@/components/Reveal";
+import { Sparkles } from "@/components/Sparkles";
+import wedding from "@/assets/event-wedding.jpg";
+import member1 from "@/assets/member-1.jpeg";
+import member2 from "@/assets/member-2.jpeg";
+import member3 from "@/assets/member-3.jpeg";
+import member4 from "@/assets/member-4.PNG";
+import member5 from "@/assets/member-5.jpeg";
+import member6 from "@/assets/member-6.jpeg";
+import member7 from "@/assets/member-7.jpeg";
+import member8 from "@/assets/member-8.jpeg";
+import member9 from "@/assets/member-9.jpeg";
+import member10 from "@/assets/member-10.jpeg";
+import member11 from "@/assets/member-11.jpeg";
+import member12 from "@/assets/member-12.jpeg";
+import member13 from "@/assets/member-13.jpeg";
+import yacht from "@/assets/event-yacht.jpg";
+import birthday from "@/assets/event-birthday.jpg";
+import celeb from "@/assets/event-celebrity.jpg";
+import corp from "@/assets/event-corporate.jpg";
+
+export const Route = createFileRoute("/about")({
+  component: AboutPage,
+  head: () => ({
+    meta: [
+      { title: "About — SK Events & Management" },
+      { name: "description", content: "Meet the atelier behind SK Events & Management — a house devoted to crafting India's most luxurious celebrations." },
+    ],
+  }),
+});
+
+const team = [
+  { name: "Shanmathi Vijayaragavan", role: "Managing Director", desc: "The visionary force composing every celebration with patience and grace.", img: member3 },
+  { name: "Deepak Raj", role: "Venue Manager", desc: "Architect of spaces — turning palaces and pavilions into living poetry.", img: member1 },
+  { name: "Padma", role: "Event Marketing Specialist", desc: "Storyteller in chief, weaving narratives that travel further than the night.", img: member5 },
+  { name: "Sugirtha Paul Ruban", role: "Trade Manager", desc: "Curates the finest artisans, fabrics and florals from across the world.", img: member2 },
+  { name: "Naveen Mariappan", role: "Trade Manager", desc: "Capturing the vibrant moments of Cooku with Comali with creativity and passion.", img: member4 },
+  { name: "Ankita", role: "Mumbai Manager", desc: "Champion of skyline glamour and celebrity-grade discretion.", img: member9 },
+  { name: "Harsha Gopala Krishnan", role: "Chennai Manager", desc: "Guardian of southern elegance — temple traditions touched by gold.", img: member13 },
+  { name: "Pooja", role: "Executive · Goa", desc: "Bringing warmth and elegance to every coastal celebration in Goa.", img: member6},
+  { name: "Jasmine", role: "Executive · Mumbai", desc: "Crafting dream events with meticulous attention and passion in Mumbai.", img: member7 },
+  { name: "Priya", role: "Executive · Mumbai", desc: "Turning visions into extraordinary realities with grace and detail.", img: member8 },
+  { name: "Sajitha", role: "Fashion Coordinator · Mumbai", desc: "Dressing every event in curated style — where fashion meets celebration.", img: member11 },
+  { name: "Preetha", role: "Marketing Executive · Goa", desc: "Amplifying the magic of every event through thoughtful storytelling.", img: member12 },
+  { name: "Rukhsana Shaikh", role: "Goa Manager · Goa", desc: "Creating unforgettable moments with elegance and creativity", img: member10 },
+];
+
+function Initial({ name }: { name: string }) {
+  const i = name.split(" ").map((s) => s[0]).slice(0, 2).join("");
+  return <span className="font-display text-4xl text-gradient-gold">{i}</span>;
+}
+
+function AboutPage() {
+  return (
+    <PageShell>
+      {/* Hero */}
+      <section className="relative h-[60vh] min-h-[480px] overflow-hidden">
+        <img src={wedding} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/65" />
+        <Sparkles density={50} />
+        <div className="relative z-10 mx-auto flex h-full max-w-4xl flex-col items-center justify-center px-6 text-center pt-24">
+          <Reveal><p className="text-[11px] tracking-[0.5em] uppercase text-white/90" style={{textShadow:'0 2px 8px rgba(0,0,0,0.8)'}}>Our Story</p></Reveal>
+          <Reveal delay={120}>
+            <h1 className="mt-6 font-display text-6xl md:text-8xl text-white" style={{textShadow:'0 4px 20px rgba(0,0,0,0.7)'}}><span className="text-gradient-gold">A House</span> of Celebrations</h1>
+          </Reveal>
+          <Reveal delay={220}>
+            <p className="mt-6 font-serif text-xl italic text-white/90" style={{textShadow:'0 2px 12px rgba(0,0,0,0.8)'}}>Born of devotion. Built on detail. Dressed in gold.</p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Story */}
+      <section className="mx-auto max-w-4xl px-6 py-28 text-center">
+        <SectionTitle eyebrow="Our Story" title="Where every moment wears gold" />
+        <Reveal delay={200}>
+          <div className="mt-12 space-y-6 font-serif text-xl text-foreground/80 leading-relaxed">
+            <p>SK Events & Management was born from a singular obsession — that no celebration should ever feel ordinary. From a single intimate engagement in a Chennai garden, we have grown into one of India's most quietly esteemed luxury event houses.</p>
+            <p>Today, our atelier of forty artisans composes weddings in Udaipur palaces, sunset proposals on Goa yachts, and red-carpet evenings in Mumbai's most coveted ballrooms.</p>
+            <p>Every brief is a love letter. Every event, our reply.</p>
+          </div>
+        </Reveal>
+      </section>
+
+      <div className="mx-auto max-w-3xl divider-gold" />
+
+      {/* Mission Vision */}
+      <section className="mx-auto max-w-7xl px-6 py-28 grid gap-12 md:grid-cols-2">
+        {[
+          { t: "Our Mission", b: "To honour every milestone with craftsmanship so meticulous it borders on devotion — turning gatherings into heirloom memories.", e: "Mission" },
+          { t: "Our Vision", b: "To be the most quietly beloved luxury event house in the world — where royalty, celebrity and family alike feel held in the same gold light.", e: "Vision" },
+        ].map((c, i) => (
+          <Reveal key={c.t} delay={i * 150}>
+            <div className="glass rounded-3xl p-12 border-gold/40 hover-lift">
+              <p className="text-[11px] tracking-[0.4em] uppercase text-gold">{c.e}</p>
+              <h3 className="mt-4 font-display text-4xl">{c.t}</h3>
+              <p className="mt-6 font-serif text-lg italic text-foreground/80">{c.b}</p>
+            </div>
+          </Reveal>
+        ))}
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <SectionTitle eyebrow="Why SK" title="The art of the irreplaceable" />
+        <div className="mt-16 grid gap-6 md:grid-cols-4">
+          {[
+            { n: "01", t: "Bespoke", d: "No template. Every celebration designed from the first thread." },
+            { n: "02", t: "Discreet", d: "Celebrity-grade privacy. NDA-bound artisans. Quiet luxury." },
+            { n: "03", t: "Global", d: "Atelier presence across Chennai, Mumbai, Goa & destinations." },
+            { n: "04", t: "Unhurried", d: "We refuse more than we accept — to give you our soul." },
+          ].map((f, i) => (
+            <Reveal key={f.n} delay={i * 100}>
+              <div className="rounded-2xl border border-border bg-card p-8 hover-lift">
+                <div className="font-display text-5xl text-gradient-gold">{f.n}</div>
+                <div className="mt-4 font-display text-2xl">{f.t}</div>
+                <p className="mt-3 font-serif text-base text-muted-foreground">{f.d}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* TEAM */}
+      <section className="mx-auto max-w-7xl px-6 py-28">
+        <SectionTitle eyebrow="The Atelier" title="The hands behind the gold" subtitle="A devoted council of dreamers, planners & masters of celebration." />
+        <div className="mt-20 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          {team.map((m, i) => (
+            <Reveal key={m.name} delay={i * 60}>
+              <div className="group flex flex-col items-center text-center p-6 rounded-[2rem] border-2 border-transparent transition-all duration-300 hover:scale-105 hover:border-gold hover:bg-card/40 hover:shadow-glow">
+                <div className="relative mx-auto h-44 w-44">
+                  <div className="absolute inset-0 rounded-full bg-gradient-gold blur-xl opacity-30 group-hover:opacity-70 transition-opacity duration-700" />
+                  <div className="absolute inset-0 rounded-full border border-gold animate-spin-slow" style={{ borderStyle: "dashed" }} />
+                  <div className="absolute inset-2 rounded-full bg-gradient-soft overflow-hidden ring-gold-glow">
+                    {m.img ? (
+                      <img src={m.img} alt={m.name} className="h-full w-full object-cover" />
+                    ) : (
+                      <div className="h-full w-full grid place-items-center">
+                        <Initial name={m.name} />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <h4 className="mt-6 font-display text-xl leading-tight">{m.name}</h4>
+                <p className="mt-1 text-[10px] tracking-[0.35em] uppercase text-gold">{m.role}</p>
+                <p className="mt-3 font-serif text-sm text-muted-foreground italic px-2">{m.desc}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* SPONSORED SECTION */}
+      <section className="pb-28 relative overflow-hidden">
+        <div className="mx-auto max-w-7xl px-6 mb-8 text-center">
+          <SectionTitle eyebrow="Our Partners" title="Sponsored Moments" subtitle="Brought to life by the finest luxury sponsors" />
+        </div>
+        <div className="relative">
+          <div className="flex w-max marquee-track gap-4 px-6">
+            {[wedding, yacht, birthday, celeb, corp, wedding, yacht, birthday, celeb, corp].map((src, i) => (
+              <div key={i} className="img-zoom relative h-[200px] w-[280px] overflow-hidden rounded-xl shadow-soft border border-gold/20">
+                <img src={src} alt="" loading="lazy" className="h-full w-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+                <div className="absolute top-3 right-3 bg-gold/90 px-2 py-0.5 rounded text-[8px] tracking-widest text-background uppercase font-bold">Sponsored</div>
+              </div>
+            ))}
+          </div>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-background to-transparent" />
+        </div>
+      </section>
+    </PageShell>
+  );
+}
