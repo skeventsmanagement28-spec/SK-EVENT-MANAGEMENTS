@@ -20,45 +20,47 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import carImg from "@/assets/thar-1.png";
-import carImg2 from "@/assets/thar-2.png";
+import carImg from "@/assets/thar-1.PNG";
+import carImg2 from "@/assets/thar-2.PNG";
 
 import bmw1 from "@/assets/bmw-1.PNG";
 
-import bmw2 from "@/assets/bmw-2.png";
-import bmw3 from "@/assets/bmw-3.png";
+import bmw2 from "@/assets/bmw-2.PNG";
+import bmw3 from "@/assets/bmw-3.PNG";
 
-import rox1 from "@/assets/rox-1.jpg";
-import rox2 from "@/assets/rox-2.jpg";
-import rox3 from "@/assets/rox-3.jpg";
 
-import blue1 from "@/assets/blue-1.jpg";
-import blue2 from "@/assets/blue-2.jpg";
-import blue3 from "@/assets/blue-3.jpg";
-import blue4 from "@/assets/blue-4.jpg";
+
+// Removed incorrect prestige imports
+import blue3 from "@/assets/blue-3.JPG";
+import blue4 from "@/assets/blue-4.JPG";
 
 import mini1 from "@/assets/mini-1.jpg";
 import mini2 from "@/assets/mini-2.jpg";
 import mini3 from "@/assets/mini-3.jpg";
 import mini4 from "@/assets/mini-4.jpg";
 
-import mah1 from "@/assets/mah-1.jpg";
-import mah2 from "@/assets/mah-2.jpg";
-import mah3 from "@/assets/mah-3.jpg";
-import mah4 from "@/assets/mah-4.jpg";
+import sea1 from "@/assets/sea-1.PNG";
+import sea2 from "@/assets/sea-2.PNG";
+import sea3 from "@/assets/sea-3.PNG";
+import sea4 from "@/assets/sea-4.PNG";
 
 import x51 from "@/assets/x5-1.jpg";
 import x52 from "@/assets/x5-2.jpg";
 import x53 from "@/assets/x5-3.jpg";
 
+import mah1 from "@/assets/mah-1.jpg";
+import mah2 from "@/assets/mah-2.jpg";
+import mah3 from "@/assets/mah-3.jpg";
+import mah4 from "@/assets/mah-4.jpg";
+
 import def1 from "@/assets/def-1.jpg";
-import def2 from "@/assets/def-2.jpg";
+import def2 from "@/assets/def-2.JPG";
 
-import ford1 from "@/assets/ford-1.jpg";
-import ford2 from "@/assets/ford-2.jpg";
+import ford1 from "@/assets/ford-1.JPG";
+import ford2 from "@/assets/ford-2.JPG";
 
-import yel1 from "@/assets/yel-1.jpg";
-import yel2 from "@/assets/yel-2.jpg";
+import yel1 from "@/assets/yel-1.JPG";
+import yel2 from "@/assets/yel-2.JPG";
 
 import bmw5 from "@/assets/bmw5-1.jpg";
 import bmw6 from "@/assets/bmw5-2.jpg";
