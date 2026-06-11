@@ -23,7 +23,8 @@ import {
 import carImg from "@/assets/thar-1.png";
 import carImg2 from "@/assets/thar-2.png";
 
-import bmw1 from "@/assets/bmw-1.png";
+import bmw1 from "@/assets/bmw-1.PNG";
+
 import bmw2 from "@/assets/bmw-2.png";
 import bmw3 from "@/assets/bmw-3.png";
 
@@ -327,9 +328,8 @@ function CarRentalGoaPage() {
                 <button
                   key={i}
                   onClick={() => setLightbox({ ...lightbox, idx: i })}
-                  className={`flex-shrink-0 h-14 w-20 rounded-lg overflow-hidden border-2 transition-all ${
-                    i === lightbox.idx ? "border-gold" : "border-white/10 opacity-60 hover:opacity-100"
-                  }`}
+                  className={`flex-shrink-0 h-14 w-20 rounded-lg overflow-hidden border-2 transition-all ${i === lightbox.idx ? "border-gold" : "border-white/10 opacity-60 hover:opacity-100"
+                    }`}
                 >
                   <img src={src} alt="" className="h-full w-full object-cover" />
                 </button>
