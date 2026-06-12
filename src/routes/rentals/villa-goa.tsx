@@ -78,27 +78,27 @@ import villa46 from "@/assets/vill4-6.png";
 import villa47 from "@/assets/vill4-7.png";
 
 //villa 5
-import villa51 from "@/assets/vill5-1.png";
-import villa52 from "@/assets/vill5-2.png";
-import villa53 from "@/assets/vill5-3.png";
-import villa54 from "@/assets/vill5-4.png";
-import villa55 from "@/assets/vill5-5.png";
-import villa56 from "@/assets/vill5-6.png";
-import villa57 from "@/assets/vill5-7.png";
-import villa58 from "@/assets/vill5-8.png";
-import villa59 from "@/assets/vill5-9.png";
+import villa51 from "@/assets/vill5-1.PNG";
+import villa52 from "@/assets/vill5-2.PNG";
+import villa53 from "@/assets/vill5-3.PNG";
+import villa54 from "@/assets/vill5-4.PNG";
+import villa55 from "@/assets/vill5-5.PNG";
+import villa56 from "@/assets/vill5-6.PNG";
+import villa57 from "@/assets/vill5-7.PNG";
+import villa58 from "@/assets/vill5-8.PNG";
+import villa59 from "@/assets/vill5-9.PNG";
 
 //villa 6
-import villa61 from "@/assets/vill6-1.png";
-import villa62 from "@/assets/vill6-2.png";
-import villa63 from "@/assets/vill6-3.png";
-import villa64 from "@/assets/vill6-4.png";
-import villa65 from "@/assets/vill6-5.png";
-import villa66 from "@/assets/vill6-6.png";
-import villa67 from "@/assets/vill6-7.png";
-import villa68 from "@/assets/vill6-8.png";
-import villa69 from "@/assets/vill6-9.png";
-import villa610 from "@/assets/vill6-10.png";
+import villa61 from "@/assets/vill6-1.PNG";
+import villa62 from "@/assets/vill6-2.PNG";
+import villa63 from "@/assets/vill6-3.PNG";
+import villa64 from "@/assets/vill6-4.PNG";
+import villa65 from "@/assets/vill6-5.PNG";
+import villa66 from "@/assets/vill6-6.PNG";
+import villa67 from "@/assets/vill6-7.PNG";
+import villa68 from "@/assets/vill6-8.PNG";
+import villa69 from "@/assets/vill6-9.PNG";
+import villa610 from "@/assets/vill6-10.PNG";
 
 
 export const Route = createFileRoute("/rentals/villa-goa")({
