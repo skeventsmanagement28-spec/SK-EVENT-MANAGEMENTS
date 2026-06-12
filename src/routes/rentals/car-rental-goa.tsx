@@ -31,8 +31,14 @@ import bmw3 from "@/assets/bmw-3.PNG";
 
 
 // Removed incorrect prestige imports
+import blue1 from "@/assets/blue-1.JPG";
+import blue2 from "@/assets/blue-2.JPG";
 import blue3 from "@/assets/blue-3.JPG";
 import blue4 from "@/assets/blue-4.JPG";
+
+import rox1 from "@/assets/rox-1.JPG";
+import rox2 from "@/assets/rox-2.JPG";
+import rox3 from "@/assets/rox-3.JPG";
 
 import mini1 from "@/assets/mini-1.jpg";
 import mini2 from "@/assets/mini-2.jpg";
