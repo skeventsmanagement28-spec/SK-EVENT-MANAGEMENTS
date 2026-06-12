@@ -41,23 +41,23 @@ import rox2 from "@/assets/rox-2.JPG";
 import rox3 from "@/assets/rox-3.JPG";
 
 import mini1 from "@/assets/mini-1.jpg";
-import mini2 from "@/assets/mini-2.jpg";
-import mini3 from "@/assets/mini-3.jpg";
-import mini4 from "@/assets/mini-4.jpg";
+import mini2 from "@/assets/mini-2.JPG";
+import mini3 from "@/assets/mini-3.JPG";
+import mini4 from "@/assets/mini-4.JPG";
 
 import sea1 from "@/assets/sea-1.PNG";
 import sea2 from "@/assets/sea-2.PNG";
 import sea3 from "@/assets/sea-3.PNG";
 import sea4 from "@/assets/sea-4.PNG";
 
-import x51 from "@/assets/x5-1.jpg";
-import x52 from "@/assets/x5-2.jpg";
-import x53 from "@/assets/x5-3.jpg";
+import x51 from "@/assets/x5-1.JPG";
+import x52 from "@/assets/x5-2.JPG";
+import x53 from "@/assets/x5-3.JPG";
 
-import mah1 from "@/assets/mah-1.jpg";
-import mah2 from "@/assets/mah-2.jpg";
-import mah3 from "@/assets/mah-3.jpg";
-import mah4 from "@/assets/mah-4.jpg";
+import mah1 from "@/assets/mah-1.JPG";
+import mah2 from "@/assets/mah-2.JPG";
+import mah3 from "@/assets/mah-3.JPG";
+import mah4 from "@/assets/mah-4.JPG";
 
 import def1 from "@/assets/def-1.jpg";
 import def2 from "@/assets/def-2.JPG";
