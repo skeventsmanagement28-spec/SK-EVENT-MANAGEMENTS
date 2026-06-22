@@ -38,7 +38,7 @@ import mod11 from "@/assets/mod-11.jpg";
 import mod12 from "@/assets/mod-12.jpg";
 import mod13 from "@/assets/mod-13.jpg";
 import mod14 from "@/assets/mod-14.jpg";
-import cel1 from "@/assets/cel-1.mov";
+import cel1 from "@/assets/cel-1.mp4";
 import cel2 from "@/assets/cel-2.mp4";
 import { X, Play } from "lucide-react";
 
