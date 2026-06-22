@@ -38,7 +38,6 @@ import mod11 from "@/assets/mod-11.jpg";
 import mod12 from "@/assets/mod-12.jpg";
 import mod13 from "@/assets/mod-13.jpg";
 import mod14 from "@/assets/mod-14.jpg";
-import cel1 from "@/assets/cel-1.mp4";
 import cel2 from "@/assets/cel-2.mp4";
 import { X, Play } from "lucide-react";
 
@@ -68,7 +67,6 @@ const items: GalleryItem[] = [
   { src: celeb, cat: "Celebrity Events", h: "tall" },
   { src: villa, cat: "Villa Surprise", h: "med" },
   { src: corp, cat: "Celebrity Events", h: "short" },
-  { src: cel1, cat: "Celebrity Events", h: "tall", type: "video" },
   { src: cel2, cat: "Celebrity Events", h: "med", type: "video" },
   { src: hero, cat: "Weddings", h: "tall" },
   { src: room1, cat: "Room Decor", h: "med" },
