@@ -1,0 +1,55 @@
+import { Link } from "@tanstack/react-router";
+import { Logo } from "./Logo";
+import { Instagram, Facebook, Mail, Phone, Youtube } from "lucide-react";
+
+export function Footer() {
+  return (
+    <footer className="relative mt-32 border-t border-gold/20 bg-navbar-dark">
+      <div className="mx-auto max-w-7xl px-6 py-20">
+        <div className="grid gap-12 md:grid-cols-4">
+          <div className="md:col-span-2">
+            <Logo size={48} />
+            <p className="mt-6 max-w-md font-serif text-lg text-white/70">
+              Crafting unforgettable luxury experiences across India and the world — from intimate yacht surprises to royal celebrity weddings.
+            </p>
+            <div className="mt-6 flex gap-3">
+              <a href="https://www.instagram.com/sk___events22?igsh=M3VtYXZ4ZmxzMDEy&utm_source=qr" target="_blank" rel="noreferrer" className="grid h-10 w-10 place-items-center rounded-full border border-gold text-gold hover:bg-gradient-gold hover:text-background transition-colors">
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a href="https://www.facebook.com/share/18qb8AjujQ/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="grid h-10 w-10 place-items-center rounded-full border border-gold text-gold hover:bg-gradient-gold hover:text-background transition-colors">
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a href="https://youtube.com/@sk_22-x7q?si=54eJ1Tb5NiUPzrRL" target="_blank" rel="noreferrer" className="grid h-10 w-10 place-items-center rounded-full border border-gold text-gold hover:bg-gradient-gold hover:text-background transition-colors">
+                <Youtube className="h-4 w-4" />
+              </a>
+              <a href="mailto:skeventsmanagement28@gmail.com" className="grid h-10 w-10 place-items-center rounded-full border border-gold text-gold hover:bg-gradient-gold hover:text-background transition-colors">
+                <Mail className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 className="text-xs tracking-[0.3em] uppercase text-gold">Explore</h4>
+            <ul className="mt-5 space-y-3 font-serif text-base text-white/70">
+              <li><Link to="/services" className="hover:text-gold">Services</Link></li>
+              <li><Link to="/gallery" className="hover:text-gold">Gallery</Link></li>
+              <li><Link to="/about" className="hover:text-gold">About</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-xs tracking-[0.3em] uppercase text-gold">Atelier</h4>
+            <ul className="mt-5 space-y-3 font-serif text-base text-white/70">
+              <li className="flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-gold" /> +91 7904315874</li>
+              <li className="flex items-center gap-2"><Mail className="h-3.5 w-3.5 text-gold" /> skeventsmanagement28@gmail.com</li>
+              <li>Goa · Mumbai · Chennai</li>
+            </ul>
+          </div>
+        </div>
+        <div className="divider-gold mt-14" />
+        <div className="mt-6 flex flex-col items-center justify-between gap-3 text-xs tracking-[0.25em] uppercase text-white/50 sm:flex-row">
+          <p>© {new Date().getFullYear()} SK Events & Management</p>
+          <p>Designed with devotion · Crafted with gold</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
