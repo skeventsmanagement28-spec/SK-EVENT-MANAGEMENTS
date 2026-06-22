@@ -33,7 +33,6 @@ import mod6 from "@/assets/mod-6.JPG";
 import mod7 from "@/assets/mod-7.JPG";
 import mod8 from "@/assets/mod-8.JPG";
 import mod9 from "@/assets/mod-9.JPG";
-import mod10 from "@/assets/mod-10.JPG";
 import mod11 from "@/assets/mod-11.jpg";
 import mod12 from "@/assets/mod-12.jpg";
 import mod13 from "@/assets/mod-13.jpg";
@@ -83,7 +82,6 @@ const items: GalleryItem[] = [
   { src: mod7, cat: "Model Shoots", h: "tall" },
   { src: mod8, cat: "Model Shoots", h: "med" },
   { src: mod9, cat: "Model Shoots", h: "short" },
-  { src: mod10, cat: "Model Shoots", h: "tall" },
   { src: mod11, cat: "Model Shoots", h: "med" },
   { src: mod12, cat: "Model Shoots", h: "short" },
   { src: mod13, cat: "Model Shoots", h: "tall" },
